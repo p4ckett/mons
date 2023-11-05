@@ -33,6 +33,33 @@ For example
 
 ### NOTE: To work on telegram you need Telegram Bot API
 
+## To get your BOT to VC in telegram/guilded/discord
+- you can use all at the same time.
+- just remove the "#"
+```coffeescript
+ local.vc -3 /state 34{para}, /pass
+ local.vc -3 /state 45{para}, /exec
+ local.vc 3 /state 45{load}, /t
+ local.vc 3 /state 34 {load}, /t
+ local.vc state -3 (f),
+ local.vc state 3 (t),
+
+ <-3>, <3>
+
+# for discord
+token_load = token.mbp
+
+# for guilded
+user_load = user.mbp
+
+# for telegram
+user_tele = uste.mbp
+
+ m $59445 - f [L],
+ m $45904 - f [L],
+ m $40392 - f [L],
+```
+
 
 ## Rulesets example
 ```coffeescript
