@@ -79,6 +79,20 @@ chat.reply (state), $ main (85492809384098102973989080392580982295839812),
 # False/Error - cRP means chatREPLY
 chat.reply $stateFalse = e.msg (cRP 23509),
 chat.reply $stateError = e.msg (cRP 90250),
+
+# for example
+chat.reply (state), $ main(85492809384098102973989080392580982295839812),
+this state will reply to messages sent by MEMBERS
+example
+anyone: Hello
+bot: Hello
+
+# in mons chat reply states we have AI replies, which is easy to use
+# 85492809384098102973989080392580982295839812 | is reply AI
+# 23578971039180951730591809380917350983247839 | is chat AI
+# 23405780237901872039138045912034810973109571 | is helper AI
+
+# If everything in states configured perfectly, it will work.
 ```
 
 <br>
