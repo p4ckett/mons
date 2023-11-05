@@ -11,36 +11,35 @@
 - easy to run
 - compact  
 
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> Rulesets example
+Rulesets example
 
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> State Loading and Looping Example
+State Loading and Looping Example
 ```coffeescript
 state ID {load},
 state ID {loop},
 ```
-
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> If you want to detect any errors and send the reason to admin panel
+If you want to detect any errors and send the reason to admin panel
 ```coffeescript
 i, error(any), e.msg(reason),
 ```
 
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> load, exec, userlevel
+Load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
 
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> commands.build (IMPORTANT)
+Commands.build (IMPORTANT)
 ```coffeescript
  commands.build <2385710237120498358123934571238359812398>
  commands.build <3157102987340198540917230098091809581237>
  commands.build <1239418739548619283712345986781239871234>
 ```
 
-<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> Important Loops
+Important Loops
 ```coffeescript
 loop main.pr ^execl _$BMFNASMFK > 58912834
 loop main.pr ^execl _$JFZXCBNMA > 23509812
