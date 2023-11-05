@@ -6,12 +6,6 @@
 
 <br>
 
-| MONS CODING LANG | IS EASY                   |
-|:--------:|:-----------------------------:|
-| <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"> | Not Difficult to understand |
-| <img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/bluemark.gif" width="25" alt="Blue Check mark denoting Group Policy"> | Not hard to code |
-| <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/green-verification.gif" width="25" alt="Rotating green checkmark denoting CSP"> | Easy to run and compact |
-
 Rulesets example
 
 ```coffeescript
