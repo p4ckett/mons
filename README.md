@@ -4,7 +4,6 @@
 <br>
 
 <img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
-![](https://i.imgur.com/waxVImv.png)
 
 <br>
 
