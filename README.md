@@ -62,10 +62,12 @@ s.f key_sys {require_key},
 i, key(sent), = check
  keyDB(mykeyDB),
 i, key = correct (giveROLE), e.msg(action)
+
 # the e.msg(action) will send the taken action LOG.
 ```
 
-////
+<br>
+<br>
 
 ## chat.reply example
 ```coffeescript
@@ -78,9 +80,10 @@ chat.reply (state), $ main (85492809384098102973989080392580982295839812),
 chat.reply $stateFalse = e.msg (cRP 23509),
 chat.reply $stateError = e.msg (cRP 90250),
 ```
--
--
--
+
+<br>
+<br>
+<br>
 
 Example | mons.scan & sending ERRORS to LOGS
 ```coffeescript
@@ -129,7 +132,9 @@ For example
 - Guilded updated API to 1.11.0
 - Update the api.mbp
 
+<br>
 ### NOTE: To work on telegram you need Telegram Bot API
+<br>
 
 ## To get your BOT in VC | telegram/guilded/discord
 - you can use all at the same time.
