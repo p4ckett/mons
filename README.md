@@ -24,6 +24,8 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 api_key (yourapikey)
 ```
 
+- to run your code
+`mons yourcode.mons`
 
 ////
 
