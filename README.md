@@ -16,6 +16,39 @@ int $ 000000000 & int $ 031953033
 <br>
 <br>
 
+To add commands to your BOT
+you will first need to make ruleset and enable it
+```coffeescript
+mons.commands {chat}, - ruleset.V
+mons.commands {chat-any}, - ruleset.V
+```
+after that we will make commands
+```coffeescript
+command.local (ban) # we created ban command
+command.local (mute) # we created mute command
+command.local (timeout) # we created timeout command
+command.local (note) # we created note command
+
+# how a note command works
+you: p.note @user bla bla bla
+bot: NO MSG
+
+# because we did not set any output messages
+# (p Is your prefix for now you can change your prefix any time)
+
+# let's add message
+command.local (note) b.msg(Note added to user Successfully)
+i, any[error] e.msg(reason)
+
+# now let's try
+
+you: p.note @user bla bla bla
+bot: Note added to user Successfully
+```
+
+<br>
+<br>
+
 ### LOG message examples
 ```
 e.msg(action) - will send the taken action to your LOGS
@@ -27,7 +60,7 @@ e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
 <br>
 <br>
 
-### You need API key to use most features that mons gives.
+### You need API key to use mons.
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | (yourapikey) | **Required**. Your API key |
