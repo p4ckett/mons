@@ -7,6 +7,11 @@
 
 <br>
 
+### IMPORTANT INT
+```coffeescript
+int $ 000000000 & int $ 105940105
+int $ 000000000 & int $ 031953033
+```
 
 <br>
 <br>
