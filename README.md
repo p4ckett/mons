@@ -24,7 +24,8 @@ bct.rly [RY], bct.ry f = r.apanel - ruleset.V
 bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 ```
 
-r panel (role_panel) roles [admin/owner/mod]
+`r panel (role_panel) roles [admin/owner/mod],`
+
 # List: ram/memory/cpu/ssd/network
 
 ```
