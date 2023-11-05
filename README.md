@@ -1,4 +1,4 @@
-## 💊 mons coding language / fast,smooth,clean
+## 💊 mons coding language / fast - smooth - clean
 
 <br>
 
