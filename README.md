@@ -16,7 +16,7 @@ state ID {loop},
 ```
 
 ## Long example
-```
+```coffeescript
 bct.wfm [SN], bct.ry f = r.apanel - ruleset.V
 bct.sfm [RD], bct.ry f = r.apanel - ruleset.V
 bct.wfs [RD], bct.ry f = r.apanel - ruleset.V
