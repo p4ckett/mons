@@ -31,7 +31,7 @@ For example
 - Guilded updated API to 1.11.0
 - Update the api.mbp
 
-## To work on telegram you need Telegram Bot API
+### NOTE: To work on telegram you need Telegram Bot API
 
 
 ## Rulesets example
