@@ -13,6 +13,28 @@ mons.scan {apiscan}, {websitescan},
 i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133),
 ```
 
+Way Gates
+- Way Gates is PROXIES for mons coding language
+- create waygate.cf paste proxies and set load
+- example
+  ```load.waygate (waygate.cf), [S],```
+  - [S], means SILENT
+  
+### Bigger Example
+```coffeescript
+ way.gate [S],
+ way.gate [S],
+
+ $ load.waygate (waygate.cf), [S],
+
+ way.gate (gates), l.ber {[state]},
+ way.gate (gates), l.seed {[loop]},
+ way.gate (gates), l.warp {[instant]},
+
+$ way.gate load /waygate.cf [S],
+$ way.gate check /waygate.cf [S],
+```
+
 We can simply make outputs go as response on apps
 Only apps - Guilded/Telegram/Discord
 You need to understand API's
