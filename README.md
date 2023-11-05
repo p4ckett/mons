@@ -7,6 +7,33 @@
 
 <br>
 
+Example | mons.scan & sending ERRORS to LOGS
+```coffeescript
+mons.scan {apiscan}, {websitescan},
+i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133),
+```
+
+We can simply make outputs go as response on apps
+Only apps - Guilded/Telegram/Discord
+You need to understand API's
+
+- create ACCOUNT for the BOT or the AI you're making
+
+```coffeescript
+v.b {windows}, (currentVer),
+local.int 4-brb.xcp / main.int 5-prlx.lcbm
+api.mbp {guilded}, (mons.chatV1), - ruleset.V
+api.mbp {guilded}, (mons.chatV6), - ruleset.V
+```
+
+You need to keep the API up to date and the versions.
+For example
+- Guilded updated API to 1.11.0
+- Update the api.mbp
+
+## To work on telegram you need Telegram Bot API
+
+
 ## Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
@@ -94,6 +121,26 @@ boj.v - rbrmmxl.lsl $ connection; 0
  state.id{if.local}, = mtr_load (base), - ruleset.V
  state $289395801802398025709 {flp},
  state.id{if.local}, = flp_load (base), - ruleset.V
+```
+
+## Important datalocal.mbp
+```coffeescript
+  # data local
+  3259078124,
+  2394791782,
+  2348799878,
+  3490659032,
+  2935012305,
+  3592930412,
+  3590230412,
+  3591239503,
+  4306592032,
+  5090912312,
+  4960239012,
+  0259023211,
+  5940130555,
+  1204935012,
+  5991283549,
 ```
 
 ## sld ID'S
