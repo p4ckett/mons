@@ -11,8 +11,8 @@
 - easy to run
 - compact
 
-- <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif"
-
+- <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"> TEST
+- 
 Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
