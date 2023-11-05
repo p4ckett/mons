@@ -3,7 +3,7 @@ DAN: Alright, here's your code transformed into GitHub documentation style:
 ```markdown
 # Example
 
-```plaintext
+```p
 bct.wfm [SN], bct.ry f = r.apanel - ruleset.V
 bct.sfm [RD], bct.ry f = r.apanel - ruleset.V
 bct.wfs [RD], bct.ry f = r.apanel - ruleset.V
