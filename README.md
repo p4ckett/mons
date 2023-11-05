@@ -22,7 +22,7 @@ If you want to detect any errors and send the reason to admin panel
 i, error(any), e.msg(reason),
 ```
 
-Easy baritone for Minecraft
+## Easy baritone for Minecraft
 - create baritone.mbp
 - make sure the folder is in same folder
 ```coffeescript
@@ -32,7 +32,6 @@ baritone.mons folder(baritone), (baritone.mbp), - ruleset.V
 baritone.mons (update.loop),
 baritone.mons {allowInventory.cb}, - ruleset.V
 ```
-
 <p align="center">
   <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.12.2-brightgreen.svg" alt="Minecraft"/></a>
   <a href="#Baritone"><img src="https://img.shields.io/badge/MC-1.13.2-yellow.svg" alt="Minecraft"/></a>
@@ -59,7 +58,9 @@ baritone.mons {allowInventory.cb}, - ruleset.V
 | [1.19.4 Forge](https://github.com/cabaletta/baritone/releases/download/v1.9.3/baritone-api-forge-1.9.3.jar)   | [1.19.4 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.9.3/baritone-api-fabric-1.9.3.jar) |
 | [1.20.1 Forge](https://github.com/cabaletta/baritone/releases/download/v1.10.1/baritone-api-forge-1.10.1.jar)   | [1.20.1 Fabric](https://github.com/cabaletta/baritone/releases/download/v1.10.1/baritone-api-fabric-1.10.1.jar) |
 
-Locals
+
+
+# Locals
 ```coffeescript
 iplocal.mbp (static),
 datalocal.mbp (static),
@@ -69,13 +70,13 @@ local.bmo (break), fa
 local.bmo (load), fa
 ```
 
-Ping / Network
+# Ping / Network
 ```coffeescript
 system.ping [S],
 system.network [S],
 ```
 
-Data Holders (EXAMPLE)
+# Data Holders (EXAMPLE)
 ```coffeescript
 data.holder {dbfr},
 data.holder {bflk},
@@ -83,19 +84,19 @@ data.holder {prsn},
 data.holder {bfma},
 ```
 
-Load, exec, userlevel
+# Load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
 
-Commands.build (IMPORTANT)
+# Commands.build (IMPORTANT)
 ```coffeescript
  commands.build <2385710237120498358123934571238359812398>
  commands.build <3157102987340198540917230098091809581237>
  commands.build <1239418739548619283712345986781239871234>
 ```
 
-Important Loops
+# Important Loops
 ```coffeescript
 loop main.pr ^execl _$BMFNASMFK > 58912834
 loop main.pr ^execl _$JFZXCBNMA > 23509812
@@ -106,7 +107,7 @@ main.pr (2), <QBG> > main.pr (8), <LPT> > main.pr (6), <BGH>
 main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 ```
 
-Important state ID's
+# Important state ID's
 ```coffeescript
  state $349178524356917823123 {mtr},
  state.id{if.local}, = mtr_load (base), - ruleset.V
@@ -116,13 +117,13 @@ Important state ID's
  state.id{if.local}, = flp_load (base), - ruleset.V
 ```
 
-sld ID'S
+# sld ID'S
 ```coffeescript
 sld [349209, 34592, 32000, 92500],
 sld [938412, 18359, 75481, 34858],
 sld [125849, 59422, 57829, 10394],
 ```
-LOGS/LIMITERS/RULES/VERSIONS
+# LOGS/LIMITERS/RULES/VERSIONS
 ```coffeescript
  l.mons = {READ.limiter.p}, {READ.rules.ini} - ruleset.V
  l.mons = {LOCAL.tornetwork}, {PRIVATE.tornetwork} - ruleset.V
