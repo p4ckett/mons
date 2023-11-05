@@ -11,6 +11,8 @@
 - easy to run
 - compact
 
+- <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif"
+
 Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
