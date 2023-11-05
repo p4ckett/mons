@@ -21,19 +21,19 @@ i, error(any), e.msg(reason),
 ```
 
 load, exec, userlevel
-```
+```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
 
 commands.build (IMPORTANT)
-```
+```coffeescript
  commands.build <2385710237120498358123934571238359812398>
  commands.build <3157102987340198540917230098091809581237>
  commands.build <1239418739548619283712345986781239871234>
 ```
 
 Important Loops
-```
+```coffeescript
 loop main.pr ^execl _$BMFNASMFK > 58912834
 loop main.pr ^execl _$JFZXCBNMA > 23509812
 loop main.pr ^execl _$VNOEWPLAS > 85293124
@@ -44,7 +44,7 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 ```
 
 Important state ID's
-```
+```coffeescript
  state $349178524356917823123 {mtr},
  state.id{if.local}, = mtr_load (base), - ruleset.V
  state $324967912873987395691 {mtr},
@@ -54,13 +54,13 @@ Important state ID's
 ```
 
 sld ID'S
-```
+```coffeescript
 sld [349209, 34592, 32000, 92500],
 sld [938412, 18359, 75481, 34858],
 sld [125849, 59422, 57829, 10394],
 ```
 LOGS/LIMITERS/RULES/VERSIONS
-```
+```coffeescript
  l.mons = {READ.limiter.p}, {READ.rules.ini} - ruleset.V
  l.mons = {LOCAL.tornetwork}, {PRIVATE.tornetwork} - ruleset.V
  l.mons = {BREAK.behvnm300}, {BREAK.idlfle} - ruleset.V
