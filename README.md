@@ -7,33 +7,29 @@
 
 <br>
 
-Rulesets example
-
+# Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
-State Loading and Looping Example
+# State Loading and Looping Example
 ```coffeescript
 state ID {load},
 state ID {loop},
 ```
-If you want to detect any errors and send the reason to admin panel
+# To detect any errors and send the reason to admin panel
 ```coffeescript
 i, error(any), e.msg(reason),
 ```
 
-## Easy baritone for Minecraft
-- create baritone.mbp
-
+# internal.r (IMPORTANT)
 ```coffeescript
-read.folder(baritone), read.mbp(baritone.mbp),
-baritone.mons {github}, - ruleset.V
-baritone.mons folder(baritone), (baritone.mbp), - ruleset.V
-baritone.mons (update.loop),
-baritone.mons {allowInventory.cb}, - ruleset.V
+(internal.r), ! fire.fbs $
+(boot.r), [b.s.s4],
+
+server.line [potocle], ]][in], 50923810 + 00000 - ruleset.V
+proto.b{[timeline]},
 ```
-- baritone repo - https://github.com/cabaletta/baritone
 
 # Locals
 ```coffeescript
@@ -321,3 +317,15 @@ location_service = {
     'readfolder(locationservice.mbp)': '',
     'pub.lc': '[done]'
 ```
+
+## Easy baritone for Minecraft
+- create baritone.mbp
+
+```coffeescript
+read.folder(baritone), read.mbp(baritone.mbp),
+baritone.mons {github}, - ruleset.V
+baritone.mons folder(baritone), (baritone.mbp), - ruleset.V
+baritone.mons (update.loop),
+baritone.mons {allowInventory.cb}, - ruleset.V
+```
+- baritone repo - https://github.com/cabaletta/baritone
