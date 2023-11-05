@@ -25,6 +25,30 @@ api_key (yourapikey)
 - to run your code
 `mons yourcode.mons`
 
+If you wanna make KEY system on your discord server or guilded
+```
+s.f key_sys {require_key},
+i, key(sent), = check
+ keyDB(yourkeyDATABASE),
+i, key = correct (action),
+
+ s.f (usedkey), i, keyused
+ e.msg (msg),
+  i, msg.f e.msg (5849),
+
+# in (action) you can put (accessCHANNELS)
+# few examples 
+# (giveROLE)
+# (giveLINK)
+
+# big example
+s.f key_sys {require_key},
+i, key(sent), = check
+ keyDB(mykeyDB),
+i, key = correct (giveROLE), e.msg(action)
+# the e.msg(action) will send the taken action LOG.
+```
+
 ////
 
 ## chat.reply example
