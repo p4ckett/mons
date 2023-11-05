@@ -7,9 +7,7 @@ bct.rly [RY], bct.ry f = r.apanel - ruleset.V
 bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 ```
 
-## r panel (role_panel) roles [admin/owner/mod]
-
-
+r panel (role_panel) roles [admin/owner/mod]
 # List: ram/memory/cpu/ssd/network
 
 ```
@@ -21,9 +19,8 @@ p.ssd {[main]},
 p.nwk {[main]},
 ```
 
-## States
-# load/loop
-
+# States
+- load/loop
 ```
 state 34901104939057019278380180948052307820934851340891350978180923413057941039478 {load},
 state 39028540491702348259691836794871982377037509172834791657987123097107093785989 {loop},
@@ -69,7 +66,6 @@ No version limit.
 
 ```
 - states - ruleset.V
-- `sSs`
 - call.id $ 59 [S]
 - call.id $ 50 [S]
 - call.id $ 30 [S]
