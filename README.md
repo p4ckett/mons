@@ -18,13 +18,9 @@ int $ 000000000 & int $ 031953033
 
 <br>
 
-- [Update 1](https://440.gitbook.io/untitled/)
-- [Update 2](https://440.gitbook.io/untitled/update-2)
-- [Api Key Example](https://440.gitbook.io/untitled/api-key-example)
-- [How Mons Api Key Works](https://440.gitbook.io/untitled/how-mons-api-key-works)
-- [Custom Commands](https://440.gitbook.io/untitled/custom-commands)
-- [Current Libraries](https://440.gitbook.io/untitled/current-libraries)
-- [Sun 05 2023 Bug Fixes](https://440.gitbook.io/untitled/bug-fixes)
+- latest update - [update 2](https://440.gitbook.io/untitled/update-2)
+
+- everything listed [here](https://440.gitbook.io/untitled/)
 
 <br>
 
@@ -65,6 +61,8 @@ api_key (yourapikey)
 
 ### If you wanna make KEY system on your discord server or guilded
 ```coffeescript
+key.sys(load) # this on first line
+
 s.f key_sys {require_key},
 i, key(sent), = check
  keyDB(yourkeyDATABASE),
@@ -89,45 +87,7 @@ i, key = correct (giveROLE), e.msg(action)
 ```
 
 <br>
-<br>
 
-## chat.reply example
-```coffeescript
-chat.reply (/),
-chat.reply (state), $ main (23405780237901872039138045912034810973109571),
-chat.reply (state), $ main (23578971039180951730591809380917350983247839),
-chat.reply (state), $ main (85492809384098102973989080392580982295839812),
-
-# False/Error - cRP means chatREPLY
-chat.reply $stateFalse = e.msg (cRP 23509),
-chat.reply $stateError = e.msg (cRP 90250),
-
-# for example
-chat.reply (state), $ main(85492809384098102973989080392580982295839812),
-
-this state will reply to messages sent by MEMBERS
-
-# example
-anyone: Hello
-bot: Hello
-
-# in mons chat reply states we have AI replies, which is easy to use
-# 85492809384098102973989080392580982295839812 | is reply AI
-# 23578971039180951730591809380917350983247839 | is chat AI
-# 23405780237901872039138045912034810973109571 | is helper AI
-
-# If everything in states configured perfectly, it will work.
-```
-
-<br>
-<br>
-<br>
-
-Example | mons.scan & sending ERRORS to LOGS
-```coffeescript
-mons.scan {apiscan}, {websitescan},
-i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133),
-```
 
 ## Way Gates
 - Way Gates is PROXIES for mons coding language
@@ -206,14 +166,6 @@ user_tele = uste.mbp
  m $40392 - f [L],
 
 api_key (yourapikey)
-```
-<br>
-<br>
-
-## Rulesets example
-```coffeescript
-[ruleset.V], which means ruleset.VALID
-[ruleset.B], which means ruleset.BLOCK
 ```
 <br>
 <br>
@@ -375,92 +327,6 @@ api_key (yourapikey)
 
 <br>
 <br>
-
-## NEEDS TO BE LOADED
-```coffeescript
-<rule.ids>, <rule.rules>, <rule.sync>
-state [03I30] = warn.msg (locked),
-state.false = warn.msg (sys m00 req3_$xbp local13),
-
-rID [SYNC] (3340)
-ruleID (7,200) rules.ini
-
-304.inter{[½$]} & 305.inter{[£½]}
-
-load.first <peb.eldo>, <peb.monsv>, <peb.mons> [S],
-load.second <mons.lib>, <mbp.mons>, <vc.mons>, <fa.mons>, <bno.mons> [S],
-load.third <recommendation.service>, <location.service>, <local>, [S],
-
-sscl.all [30405, 30493, 95340, 34932, 35404],
-sscl.all [85491, 13493, 34915, 58129, 47123],
-
-sscl.all [remove.invalid],
-
-     feb 4.3.2.15.6.3.5.8.6.2.1.6.8.9.5.1.4.7
-     feb 4.7.4.94.3.5.7.8.1.3.7.7.6.4.4.1.2.4
-     feb 4.1.3.23.5.7.8.3.1.2.6.8.5.3.3.7.9.1
-     feb 4.6.7.54.3.1.5.6.7.1.5.3.5.5.3.1.2.5
-     feb 4.1.6.83.4.1.5.7.8.8.6.1.3.6.8.9.4.1
-
-paste.local {inb0},
- server.none - ruleset.B
- paste.local {inb1},
-paste.local {inb0},
- server.none - ruleset.B
- paste.local {inb1},
-paste.local {inb0},
- server.none - ruleset.B
- paste.local {inb1},
-paste.local {inb0},
- server.none - ruleset.B
- paste.local {inb1},
-paste.local {inb0},
- server.none - ruleset.B
- paste.local {inb1},
-
-     feb.lock = all [S],
-
-     seb.lock 94002100340589340359234 & seb.lock 98235989384190394859999
-
-<limit.ids> sl$ective -_$userarea #$ 54000 
-v.b (int), b dual $ IDS {3450},
- sl$ective -_$userarea #$ 54000 
- v.b (int), b dual $ IDS {3450},
-lID [SYNC] (9540) sl$ective -_$userarea #$ 54000 
-v.b (int), b dual $ IDS {3450},
-limiterID [SYNC] (1,500) limiter.p sl$ective -_$userarea #$ 54000 
-v.b (int), b dual $ IDS {3450},
- sl$ective -_$userarea #$ 54000 
- v.b (int), b dual $ IDS {3450},
-{sync.rules}, {sync.limiter}, sl$ective -_$userarea #$ 54000 
-v.b (int), b dual $ IDS {3450},
- sl$ective -_$userarea #$ 54000 
- v.b (int), b dual $ IDS {3450},
-l [LocationHere], sl$ective -_$userarea #$ 54000 
-v.b (int), b dual $ IDS {3450},
-local pub = {} pub.mons = (239435),
-<rq.admin>, <rq.hwid>, <rq.location> [S],
-
-re.locate = (sys30)
-$b {bin.localID940342}, {bin.localID390400}
-
-api_key (yourapikey)
-```
-<br>
-<br>
-
-## Long example
-```coffeescript
-bct.wfm [SN], bct.ry f = r.apanel - ruleset.V
-bct.sfm [RD], bct.ry f = r.apanel - ruleset.V
-bct.wfs [RD], bct.ry f = r.apanel - ruleset.V
-bct.rly [RY], bct.ry f = r.apanel - ruleset.V
-bct.lup [LP], bct.ry f = r.apanel - ruleset.V
-```
-<br>
-<br>
-
-`r panel (role_panel) roles [admin/owner/mod],`
 
 ## List: ram/memory/cpu/ssd/network
 ```coffeescript
