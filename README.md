@@ -1,8 +1,6 @@
 # 💊 mons coding language [W.I.P]
 ## Fast - Smooth - Clean / PRIVATE
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
-
 <br>
 
 <img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
@@ -471,3 +469,6 @@ baritone.mons {allowInventory.cb}, - ruleset.V
 api_key (yourapikey)
 ```
 - baritone repo - https://github.com/cabaletta/baritone
+
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
