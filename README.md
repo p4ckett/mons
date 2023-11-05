@@ -1,8 +1,9 @@
-.mons coding language / fast,smooth,clean
-- not difficult to understand
-- not hard to code
-- easy to run
-- compact
+## .mons coding language / fast,smooth,clean
+
+💊 - not difficult to understand
+💊 - not hard to code
+💊 - easy to run
+💊 - compact
 
 Rulesets example
 ```coffeescript
