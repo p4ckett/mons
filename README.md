@@ -18,62 +18,7 @@ int $ 000000000 & int $ 031953033
 
 <br>
 
-### New commands that you can add to your bot
-### remember you can make your own custom command
-<br>
-
-```coffeescript
-commands.removeprefix
-commands.addprefix
-commands.prefix
-commands.boosterrole
-commands.boosterroleremove
-commands.jail
-commands.unjail
-commands.jailtime
-commands.spotify
-commands.crypto
-
-# You can Control your music on Spotify through commands Run `p.spotifylogin` to authorize your account
-# for this you need to set up Auth
-
-# bump
-commands.bumpreminder
-commands.bumpreminderchannel
-commands.bumpremindermessage
-
-# reddit
-commands.subreddit
-commands.subredditadd
-commands.subredditremove
-commands.subredditupdate
-commands.subredditlist
-commands.subredditmessage
-
-# X (twitter)
-commands.xedit
-commands.xadd
-commands.xremove
-commands.xupdate
-commands.xlist
-commands.xmessage
-
-# pinterest
-commands.pinedit
-commands.pinadd
-commands.pinremove
-commands.pinupdate
-commands.pinlist
-commands.pinmessage
-
-# twitch
-commands.twedit
-commands.twadd
-commands.twremove
-commands.twupdate
-commands.twlist
-commands.twmessage
-```
+- https://440.gitbook.io/untitled/update-2
 
 <br>
 <br>
