@@ -4,6 +4,17 @@
 - easy to run
 - compact
 
+.mons has rulesets
+```
+[ruleset.V], which means ruleset.VALID
+[ruleset.B], which means ruleset.BLOCK
+```
+easy state loading and looping
+```
+state ID {load},
+state ID {loop},
+```
+
 ## example
 ```
 bct.wfm [SN], bct.ry f = r.apanel - ruleset.V
