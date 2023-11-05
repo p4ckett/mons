@@ -16,8 +16,8 @@ int $ 000000000 & int $ 031953033
 <br>
 <br>
 
-To add commands to your BOT
-you will first need to make ruleset and enable it
+### add commands to your BOT
+- you will first need to make ruleset and enable it
 ```coffeescript
 mons.commands {chat}, - ruleset.V
 mons.commands {chat-any}, - ruleset.V
