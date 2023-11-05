@@ -7,22 +7,22 @@
 
 <br>
 
-# Rulesets example
+## Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
-# State Loading and Looping Example
+## State Loading and Looping Example
 ```coffeescript
 state ID {load},
 state ID {loop},
 ```
-# To detect any errors and send the reason to admin panel
+## To detect any errors and send the reason to admin panel
 ```coffeescript
 i, error(any), e.msg(reason),
 ```
 
-# internal.r (IMPORTANT)
+## internal.r (IMPORTANT)
 ```coffeescript
 (internal.r), ! fire.fbs $
 (boot.r), [b.s.s4],
@@ -31,7 +31,7 @@ server.line [potocle], ]][in], 50923810 + 00000 - ruleset.V
 proto.b{[timeline]},
 ```
 
-# Locals
+## Locals
 ```coffeescript
 iplocal.mbp (static),
 datalocal.mbp (static),
@@ -41,13 +41,13 @@ local.bmo (break), fa
 local.bmo (load), fa
 ```
 
-# Ping / Network
+## Ping / Network
 ```coffeescript
 system.ping [S],
 system.network [S],
 ```
 
-# Data Holders (EXAMPLE)
+## Data Holders (EXAMPLE)
 ```coffeescript
 data.holder {dbfr},
 data.holder {bflk},
@@ -55,19 +55,19 @@ data.holder {prsn},
 data.holder {bfma},
 ```
 
-# Load, exec, userlevel
+## Load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
 
-# Commands.build (IMPORTANT)
+## Commands.build (IMPORTANT)
 ```coffeescript
  commands.build <2385710237120498358123934571238359812398>
  commands.build <3157102987340198540917230098091809581237>
  commands.build <1239418739548619283712345986781239871234>
 ```
 
-# Important Loops
+## Important Loops
 ```coffeescript
 
 # main.pr execl Loops
@@ -86,7 +86,7 @@ boj.v - rbrmmxl.lsl $ connection; 3
 boj.v - rbrmmxl.lsl $ connection; 0
 ```
 
-# Important state ID's
+## Important state ID's
 ```coffeescript
  state $349178524356917823123 {mtr},
  state.id{if.local}, = mtr_load (base), - ruleset.V
@@ -96,13 +96,13 @@ boj.v - rbrmmxl.lsl $ connection; 0
  state.id{if.local}, = flp_load (base), - ruleset.V
 ```
 
-# sld ID'S
+## sld ID'S
 ```coffeescript
 sld [349209, 34592, 32000, 92500],
 sld [938412, 18359, 75481, 34858],
 sld [125849, 59422, 57829, 10394],
 ```
-# LOGS/LIMITERS/RULES/VERSIONS
+## LOGS/LIMITERS/RULES/VERSIONS
 ```coffeescript
  l.mons = {READ.limiter.p}, {READ.rules.ini} - ruleset.V
  l.mons = {LOCAL.tornetwork}, {PRIVATE.tornetwork} - ruleset.V
@@ -117,8 +117,7 @@ sld [125849, 59422, 57829, 10394],
  p.mons = {LOG.logsend}, {LOG.vv} - ruleset.V
 ```
 
-# NEEDS TO BE LOADED
-
+## NEEDS TO BE LOADED
 ```coffeescript
 <rule.ids>, <rule.rules>, <rule.sync>
 state [03I30] = warn.msg (locked),
@@ -200,7 +199,7 @@ bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 
 `r panel (role_panel) roles [admin/owner/mod],`
 
-# List: ram/memory/cpu/ssd/network
+## List: ram/memory/cpu/ssd/network
 
 ```coffeescript
 p.ram {[main]},
@@ -211,7 +210,7 @@ p.ssd {[main]},
 p.nwk {[main]},
 ```
 
-# States
+## States
 - load/loop
 ```coffeescript
 state 34901104939057019278380180948052307820934851340891350978180923413057941039478 {load},
