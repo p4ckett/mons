@@ -20,6 +20,39 @@ If you want to detect any errors and send the reason to admin panel
 i, error(any), e.msg(reason),
 ```
 
+load, exec, userlevel
+```
+<p3bload>, <exec>, <userexeclevel>
+```
+
+commands.build (IMPORTANT)
+```
+ commands.build <2385710237120498358123934571238359812398>
+ commands.build <3157102987340198540917230098091809581237>
+ commands.build <1239418739548619283712345986781239871234>
+```
+
+Important Loops
+```
+loop main.pr ^execl _$BMFNASMFK > 58912834
+loop main.pr ^execl _$JFZXCBNMA > 23509812
+loop main.pr ^execl _$VNOEWPLAS > 85293124
+
+main.pr (7), <IDP> > main.pr (1), <QPS> > main.pr (9), <VEQ>
+main.pr (2), <QBG> > main.pr (8), <LPT> > main.pr (6), <BGH>
+main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
+```
+
+Important state ID's
+```
+ state $349178524356917823123 {mtr},
+ state.id{if.local}, = mtr_load (base), - ruleset.V
+ state $324967912873987395691 {mtr},
+ state.id{if.local}, = mtr_load (base), - ruleset.V
+ state $289395801802398025709 {flp},
+ state.id{if.local}, = flp_load (base), - ruleset.V
+```
+
 sld ID'S
 ```
 sld [349209, 34592, 32000, 92500],
