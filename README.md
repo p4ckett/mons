@@ -19,6 +19,7 @@ i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133
 - example
   ```load.waygate (waygate.cf), [S],```
   - [S], means SILENT
+  - "$" means PRIORITY on mons coding language
   
 ### Bigger Example
 ```coffeescript
