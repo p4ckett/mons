@@ -24,8 +24,6 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 api_key (yourapikey)
 ```
 
-///////
-
 #### add(num1, num2)
 
 Example | mons.scan & sending ERRORS to LOGS
