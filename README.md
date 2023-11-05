@@ -2,9 +2,12 @@
 ## Fast - Smooth - Clean / PRIVATE
 
 <br>
+<br>
+<br>
 
 <img src="https://github.com/HotCakeX/Harden-Windows-Security/raw/main/images/Gifs/1pxRainbowLine.gif" width= "300000" alt="horizontal super thin rainbow RGB line">
 
+<br>
 <br>
 
 ### IMPORTANT INT
