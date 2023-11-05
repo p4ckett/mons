@@ -27,8 +27,17 @@ api_key (yourapikey)
 
 ////
 
+## chat.reply example
+```coffeescript
+chat.reply (/),
+chat.reply (state), $ main (23405780237901872039138045912034810973109571),
+chat.reply (state), $ main (23578971039180951730591809380917350983247839),
+chat.reply (state), $ main (85492809384098102973989080392580982295839812),
 
-#### add(num1, num2)
+# False/Error - cRP means chatREPLY
+chat.reply $stateFalse = e.msg (cRP 23509),
+chat.reply $stateError = e.msg (cRP 90250),
+```
 
 Example | mons.scan & sending ERRORS to LOGS
 ```coffeescript
