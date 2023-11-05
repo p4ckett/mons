@@ -10,7 +10,7 @@ bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 ## r panel (role_panel) roles [admin/owner/mod]
 
 
-# List: ram/mem/cpu/ssd/nwk
+# List: ram/memory/cpu/ssd/network
 
 ```
 p.ram {[main]},
@@ -41,6 +41,7 @@ loop.state (mainstates), $ all.states - ruleset.V
 
 ## library
 
+```
 - lib - /libraryV1/old/
 - lib - /libraryV2/old/
 - lib - /libraryV3/old/
@@ -49,11 +50,12 @@ loop.state (mainstates), $ all.states - ruleset.V
 - lib - /libraryV6/old/
 - lib - /libraryV7/current/
 - load.latest (library), ruleset.V
-
+```
 No version limit.
 
 ## chat reply states
 
+```
 - chat.reply (/)
 - chat.reply (state), $ main (2340578023799909571)
 - chat.reply (state), $ main (2357897150983247839)
@@ -61,9 +63,11 @@ No version limit.
 - chat.reply $stateFalse = e.msg (cRP 23509)
 - chat.reply $stateError = e.msg (cRP 90250)
 - chat.reply $stateBlackList = e.msg (cRP 935000)
+```
 
 ## call.id / call states
 
+```
 - states - ruleset.V
 - `sSs`
 - call.id $ 59 [S]
@@ -71,15 +75,17 @@ No version limit.
 - call.id $ 30 [S]
 - call.id $ 12 [S]
 - call.id $ 91 [S]
+```
 
 ## Spotify search
 
+```
 - spotify.search [S]
 - spotify.search (waitforInput) - ruleset.V
   - spotify.search (InputReceived) = e.src (Input)
     - spotify.search (output) = e.msg (link)
     - spotify.search (SongNotFound) = e.msg (msg)
-
+```
 Will search and send the song link as output in chat.
 
 ## local int and _ux2 / base and data, priority - t or - f
@@ -90,30 +96,36 @@ Will search and send the song link as output in chat.
 ## pass generator
 
 gen.pgen folder(passgen), r(pgen.mbp)
-
+```
 - `<Uppercase>`
 - `<lowercase>`
 - `<Numbers >`
 - `<Symbols>`
 - `<ExcludeSimilarCharacters>`
 - `<ExcludeAmbiguousSymbols>`
+```
 
 ## location service
 
 Can use Google maps and SnapMap
-
-- gs.sn {serviceID.9349}, (location.service) = run.t
-- location.service (run.as), service
-- cl.sn {location.service}, (main.base)
-- cl.sn {location.service}, provide from (SnapMap, GoogleMap)
-- cl.sn {location.service}, example "https://maps.app.goo.gl/"
-- cl.sn {location.service}, search (https://www.google.com/maps/place)
-- cl.sn {location.service}, search.example = (https://www.google.com/maps/place/Houston,+TX,+USA)
-- cl.sn {location.service}, map.embed (locationservice.mbp)
-- cl.sn {location.service}, map.link = (https://maps.app.goo.gl/)
-- cl.sn {location.service}, service.reactive [true], [S]
-- cl.sn {location.service}, example open.app (snapchat), {[android]}, [S]
-- cl.sn {location.service}, example open.app (snapchat), {[snapmap]}, [S]
-- cl.sn {location.service}, provide output (Text, Voice), [ANY], [S]
-- cl.sn {location.service}, request (nearby), [nearby.places]
-- cl
+```
+location_service = {
+    'serviceID': 9349,
+    'run': True,
+    'main.base': 'cl.sn(location.service)',
+    'provide': ['SnapMap', 'GoogleMap'],
+    'example': 'https://maps.app.goo.gl/',
+    'search': 'https://www.google.com/maps/place',
+    'map.embed': 'locationservice.mbp',
+    'map.link': 'https://maps.app.goo.gl/',
+    'service.reactive': True,
+    'example.open.app': {
+        'snapchat': '[android]', - no IOS support
+        'snapmap': '[snapmap]'
+    },
+    'provide.output': ['Text', 'Voice'],
+    'request.nearby': ['nearby.places', 'nearby.restaurants', 'nearby.parks', 'nearby.hotels', 'nearby.bars', 'nearby.pubs', 'nearby.museum', 'nearby.hospital', 'nearby.stores', 'nearby.any'],
+    'folder(location)': 'location',
+    'readfolder(locationservice.mbp)': '',
+    'pub.lc': '[done]'
+```
