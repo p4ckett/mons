@@ -21,7 +21,8 @@ i, error(any), e.msg(reason),
 ```
 
 # NEEDS TO BE LOADED
-```coffeescrip
+
+```coffeescript
 <rule.ids>, <rule.rules>, <rule.sync>
 state [03I30] = warn.msg (locked),
 state.false = warn.msg (sys m00 req3_$xbp local13),
