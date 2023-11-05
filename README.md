@@ -33,7 +33,7 @@ For example
 
 ### NOTE: To work on telegram you need Telegram Bot API
 
-## To get your BOT to VC in telegram/guilded/discord
+## To get your BOT in VC | telegram/guilded/discord
 - you can use all at the same time.
 - just remove the "#"
 ```coffeescript
