@@ -24,10 +24,16 @@ e.msg error(any) - will send any ERROR to your LOGS
 e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
 ```
 
+<br>
+<br>
+
 ### You need API key to use most features that mons gives.
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | (yourapikey) | **Required**. Your API key |
+
+<br>
+<br>
 
 ### example
 ```coffeescript
