@@ -1,145 +1,120 @@
-## Example
+import ruleset
+from libraryV7.current import load_latest
 
-bct.wfm [SN], bct.ry f = r.apanel - ruleset.V
-bct.sfm [RD], bct.ry f = r.apanel - ruleset.V
-bct.wfs [RD], bct.ry f = r.apanel - ruleset.V
-bct.rly [RY], bct.ry f = r.apanel - ruleset.V
-bct.lup [LP], bct.ry f = r.apanel - ruleset.V
+# Role Panel
+roles = ['admin', 'owner', 'mod']
 
-# r panel (role_panel) roles [admin/owner/mod],
+# System Info
+system_info = ['ram', 'memory', 'cpu', 'ssd', 'network']
 
-list ram/mem/cpu/ssd/nwk 
+# States
+states = {
+    'load': 34901105097857941039478,
+    'loop': 39028540496798093785989
+}
 
-ram, memory, cpu, ssd, network -
+# Loop States and Rulesets
+loop_states = {
+    'mainstates': ruleset.VALID,
+    'all.states': ruleset.VALID
+}
 
-# states - load/loop
+# Library
+load_latest('/libraryV7/current/')
 
-state 34901105097857941039478 {load},
-state 39028540496798093785989 {loop},
+# Chat Reply States
+chat_reply_states = {
+    '/': ruleset.VALID,
+    'state': {
+        'main': [2340578023799909571, 2357897150983247839, 8549280392580939812]
+    },
+    'stateFalse': 'e.msg(cRP 23509)',
+    'stateError': 'e.msg(cRP 90250)',
+    'stateBlackList': 'e.msg(cRP 935000)'
+}
 
-# loop.state and rulesets
+# Call IDs / Call States
+call_states = ruleset.VALID
+call_ids = {
+    59: 'S',
+    50: 'S',
+    30: 'S',
+    12: 'S',
+    91: 'S'
+}
 
-loop.state (mainstates), 
-$ state.states - ruleset.V
-loop.state (mainstates), 
-$ all.states - ruleset.V
+# Spotify Search
+spotify_search = {
+    'S': ruleset.VALID,
+    'waitforInput': ruleset.VALID,
+    'InputReceived': 'e.src(Input)',
+    'output': 'e.msg(link)',
+    'SongNotFound': 'e.msg(msg)'
+}
 
-- ruleset.V means ruleset.VALID
-- ruleset.B means ruleset.BLOCK
+# Local Int and _ux2
+local_int = True
+_ux2 = False
 
-# library
+# Password Generator
+gen_pgen = {
+    'folder': 'passgen',
+    'r': 'pgen.mbp',
+    'Uppercase': True,
+    'lowercase': True,
+    'Numbers': True,
+    'Symbols': True,
+    'ExcludeSimilarCharacters': True,
+    'ExcludeAmbiguousSymbols': True
+}
 
- lib - /libraryV1/old/
- lib - /libraryV2/old/
- lib - /libraryV3/old/
- lib - /libraryV4/old/
- lib - /libraryV5/old/
- lib - /libraryV6/old/
- lib - /libraryV7/current/
-load.latest (library), ruleset.V
+# Location Service
+location_service = {
+    'serviceID': 9349,
+    'run': True,
+    'main.base': 'cl.sn(location.service)',
+    'provide': ['SnapMap', 'GoogleMap'],
+    'example': 'https://maps.app.goo.gl/',
+    'search': 'https://www.google.com/maps/place',
+    'map.embed': 'locationservice.mbp',
+    'map.link': 'https://maps.app.goo.gl/',
+    'service.reactive': True,
+    'example.open.app': {
+        'snapchat': '[android]', - no IOS support
+        'snapmap': '[snapmap]'
+    },
+    'provide.output': ['Text', 'Voice'],
+    'request.nearby': ['nearby.places', 'nearby.restaurants', 'nearby.parks', 'nearby.hotels', 'nearby.bars', 'nearby.pubs', 'nearby.museum', 'nearby.hospital', 'nearby.stores', 'nearby.any'],
+    'folder(location)': 'location',
+    'readfolder(locationservice.mbp)': '',
+    'pub.lc': '[done]'
+}
 
-- No version limit.
+# Recommendation Service
+recommendation_service = {
+    'serviceID': 9350,
+    'run': True,
+    'folder': 'rc',
+    'readfolder(rc.mbp)': '',
+    'provide.requested': 'bbs.local',
+    'provide': ['text(any)', 'voice(any)'],
+    'request': ['song', 'game', 'movie', 'video', 'topic'],
+    'service.reactive': True,
+    'provide.full': '',
+    'link{[invalid]}': 'e.msg(igsn 1)',
+    'sp.b(recommendation.done)': 'send',
+    'recommendation.notfound': 'p.msg(reason)',
+    'error(any)': 'e.msg(reason)'
+}
 
-# chat reply states
+# Compact Message Ruleset
+compact_message = {
+    'any': ruleset.VALID,
+    'main': ruleset.VALID,
+    'recommendation': ruleset.VALID
+}
 
-chat.reply (/),
-chat.reply (state), $ main (2340578023799909571),
-chat.reply (state), $ main (2357897150983247839),
-chat.reply (state), $ main (8549280392580939812),
-
-chat.reply $stateFalse = e.msg (cRP 23509),
-chat.reply $stateError = e.msg (cRP 90250),
-chat.reply $stateBlackList = e.msg (cRP 935000),
-
-# call.id / call states
-
- states - ruleset.V
- # sSs
- call.id $ 59 [S],
- call.id $ 50 [S],
- call.id $ 30 [S],
- call.id $ 12 [S],
- call.id $ 91 [S],
-
- # spotify search
-
-  spotify.search [S],
-  spotify.search (waitforInput), - ruleset.V
-   spotify.search (InputReceived) = e.src (Input), 
-    spotify.search (output), = e.msg (link),
-     spotify.search (SongNotFound), = e.msg (msg),
-
-- will search and send the song link as output in chat.
-
-# local int and _ux2 / base and data, priority - t or - f
-- t means true - f means false
-
-# pass generator
-
-gen.pgen folder(passgen), r(pgen.mbp),
-<Uppercase>, <lowercase>, <Numbers >, <Symbols>, <ExcludeSimilarCharacters>, <ExcludeAmbiguousSymbols>
-
-# location service
-- can use Google maps and SnapMap
-
-  gs.sn {serviceID.9349}, (location.service) = run.t
-location.service (run.as), service
-cl.sn {location.service}, (main.base),
-cl.sn {location.service}, provide from (SnapMap, GoogleMap),
-cl.sn {location.service}, example "https://maps.app.goo.gl/"
-cl.sn {location.service}, search (https://www.google.com/maps/place),
-cl.sn {location.service}, search.example = (https://www.google.com/maps/place/Houston,+TX,+USA),
-cl.sn {location.service}, map.embed (locationservice.mbp),
-cl.sn {location.service}, map.link = (https://maps.app.goo.gl/)
-cl.sn {location.service}, service.reactive [true], [S],
-cl.sn {location.service}, example open.app (snapchat), {[android]}, [S],
-cl.sn {location.service}, example open.app (snapchat), {[snapmap]}, [S],
-cl.sn {location.service}, provide output (Text, Voice), [ANY], [S],
-cl.sn {location.service}, request (nearby), [nearby.places],
-cl.sn {location.service}, request (nearby), [nearby.restaurants],
-cl.sn {location.service}, request (nearby), [nearby.parks],
-cl.sn {location.service}, request (nearby), [nearby.hotels],
-cl.sn {location.service}, request (nearby), [nearby.bars],
-cl.sn {location.service}, request (nearby), [nearby.pubs],
-cl.sn {location.service}, request (nearby), [nearby.museum],
-cl.sn {location.service}, request (nearby), [nearby.hospital],
-cl.sn {location.service}, request (nearby), [nearby.stores],
-cl.sn {location.service}, request (nearby), [nearby.any],
-
-location.service folder(location),
-location.service readfolder(locationservice.mbp),
-pub.lc {[done]},
-
-#  recommendation service
-
-gs.sn {serviceID.9350}, (recommendation.service) = run.t
-recommendation.service folder(rc),
-recommendation.service readfolder(rc.mbp),
-
-if.any {req}, - over.bbs {gs.sn}, [trace.1],
-if.any {req}, - over.bbs {gs.sn}, [provide], (output),
-gs.sn {provide.requested}, (bbs.local),
-gs.sn {[received]} text(any), voice(any),
-gs.sn {recommendation.service}, service.reactive [true], [S],
-
-gs.sn {recommendation.service}, request (song),
-gs.sn {recommendation.service}, request (game),
-gs.sn {recommendation.service}, request (movie),
-gs.sn {recommendation.service}, request (video),
-gs.sn {recommendation.service}, request (topic),
-
-recommendation.service (run.as), service
-recommendation.service (provide.full),
-i, link{[invalid]}, e.msg(igsn 1), sp.b (recommendation.done), = send
-i, recommendation.notfound p.msg(reason),
-i, error(any), e.msg(reason),
-
-# compact.message ruleset
-
-compact.message (any), - ruleset.V
-compact.message (main), - ruleset.V
-compact.message (recommendation), - ruleset.V
-
-# base invalid local_load if error send message to admin panel
-
-base.bl {invalid} i, local_load = e.msg(l34),
+# Base Invalid Local Load
+base_bl = {
+    'invalid': 'e.msg(l34)'
+}
