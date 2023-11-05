@@ -11,7 +11,7 @@
 - easy to run
 - compact  
 
-<img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"> Rulesets example
+<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> Rulesets example
 
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
