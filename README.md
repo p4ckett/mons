@@ -329,7 +329,6 @@ bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 `r panel (role_panel) roles [admin/owner/mod],`
 
 ## List: ram/memory/cpu/ssd/network
-
 ```coffeescript
 p.ram {[main]},
 p.mem {[main]},
@@ -347,7 +346,6 @@ state 39028540491702348259691836794871982377037509172834791657987123097107093785
 ```
 
 ## loop.state and rulesets
-
 ```coffeescript
 loop.state (mainstates), $ state.states - ruleset.V
 loop.state (mainstates), $ all.states - ruleset.V
@@ -356,8 +354,8 @@ loop.state (mainstates), $ all.states - ruleset.V
 - `ruleset.V` means ruleset.VALID
 - `ruleset.B` means ruleset.BLOCK
 
-## library
-
+## library (You will need to load this)
+- create lib.mbp and paste.
 ```coffeescript
 - lib - /libraryV1/old/
 - lib - /libraryV2/old/
