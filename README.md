@@ -25,7 +25,7 @@ i, error(any), e.msg(reason),
 
 ## Easy baritone for Minecraft
 - create baritone.mbp
-- make sure the folder is in same folder
+
 ```coffeescript
 read.folder(baritone), read.mbp(baritone.mbp),
 baritone.mons {github}, - ruleset.V
