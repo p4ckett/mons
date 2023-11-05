@@ -7,8 +7,19 @@
 
 <br>
 
-## You need API key to use most features that mons gives.
 
+<br>
+<br>
+
+### LOG message examples
+```
+e.msg(action) - will send the taken action to your LOGS
+e.msg(error) - will send ERRORS to your LOGS
+e.msg error(any) - will send any ERROR to your LOGS
+e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
+```
+
+### You need API key to use most features that mons gives.
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
 | `api_key` | (yourapikey) | **Required**. Your API key |
@@ -22,12 +33,15 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 api_key (yourapikey)
 ```
 <br>
+<br>
 
 - to run your code
 `mons yourcode.mons`
+
+<br>
 <br>
 
-If you wanna make KEY system on your discord server or guilded
+### If you wanna make KEY system on your discord server or guilded
 ```coffeescript
 s.f key_sys {require_key},
 i, key(sent), = check
