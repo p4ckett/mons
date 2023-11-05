@@ -22,41 +22,9 @@ int $ 000000000 & int $ 031953033
 - [Update 2](https://440.gitbook.io/untitled/update-2)
 - [Api Key Example](https://440.gitbook.io/untitled/api-key-example)
 - [How Mons Api Key Works](https://440.gitbook.io/untitled/how-mons-api-key-works)
+- [Custom Commands](https://440.gitbook.io/untitled/custom-commands)
+- [Current Libraries](https://440.gitbook.io/untitled/current-libraries)
 
-<br>
-<br>
-
-### add commands to your BOT
-- you will first need to make ruleset and enable it
-```coffeescript
-mons.commands {chat}, - ruleset.V
-mons.commands {chat-any}, - ruleset.V
-```
-after that we will make commands
-```coffeescript
-command.local (ban) # we created ban command
-command.local (mute) # we created mute command
-command.local (timeout) # we created timeout command
-command.local (note) # we created note command
-
-# how a note command works
-you: p.note @user bla bla bla
-bot: NO MSG
-
-# because we did not set any output messages
-# (p Is your prefix for now you can change your prefix any time)
-
-# let's add message
-command.local (note) b.msg(Note added to user Successfully)
-i, any[error] e.msg(reason)
-
-# now let's try
-
-you: p.note @user bla bla bla
-bot: Note added to user Successfully
-```
-
-<br>
 <br>
 
 ### LOG message examples
@@ -528,13 +496,13 @@ loop.state (mainstates), $ all.states - ruleset.V
 ## library (You will need to load this)
 - create lib.mbp and paste.
 ```coffeescript
-- lib - /libraryV1/old/
-- lib - /libraryV2/old/
-- lib - /libraryV3/old/
-- lib - /libraryV4/old/
-- lib - /libraryV5/old/
-- lib - /libraryV6/old/
-- lib - /libraryV7/current/
+lib - /libraryV1/old/
+lib - /libraryV2/old/
+lib - /libraryV3/old/
+lib - /libraryV4/old/
+lib - /libraryV5/old/
+lib - /libraryV6/old/
+lib - /libraryV7/current/
 - load.latest (library), ruleset.V
 
 api_key (yourapikey)
