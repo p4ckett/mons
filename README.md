@@ -13,7 +13,7 @@ mons.scan {apiscan}, {websitescan},
 i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133),
 ```
 
-Way Gates
+## Way Gates
 - Way Gates is PROXIES for mons coding language
 - create waygate.cf paste proxies and set load
 - example
