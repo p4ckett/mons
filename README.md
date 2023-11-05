@@ -19,7 +19,7 @@ int $ 000000000 & int $ 031953033
 <br>
 
 ### New commands that you can add to your bot
-### remember that you can add any command you want custom
+### remember you can make your own custom command
 <br>
 
 ```coffeescript
@@ -74,6 +74,7 @@ commands.twupdate
 commands.twlist
 commands.twmessage
 ```
+
 <br>
 <br>
 
@@ -118,7 +119,6 @@ e.msg error(any) - will send any ERROR to your LOGS
 e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
 ```
 
-<br>
 <br>
 
 ### You need API key to use mons.
