@@ -9,6 +9,15 @@
 
 <br>
 
+## You need API key to use most features that mons gives.
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `api_key` | `string` | **Required**. Your API key |
+
+
+#### add(num1, num2)
+
 Example | mons.scan & sending ERRORS to LOGS
 ```coffeescript
 mons.scan {apiscan}, {websitescan},
@@ -83,6 +92,8 @@ user_tele = uste.mbp
  m $59445 - f [L],
  m $45904 - f [L],
  m $40392 - f [L],
+
+api_key (yourapikey)
 ```
 
 
@@ -118,6 +129,8 @@ dataprivate.mbp (static),
 
 local.bmo (break), fa
 local.bmo (load), fa
+
+api_key (yourapikey)
 ```
 
 ## Ping / Network
@@ -163,6 +176,8 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 b$skcm.loop_ in server $ force.local; fire ^ intbBBS
 boj.v - rbrmmxl.lsl $ connection; 3
 boj.v - rbrmmxl.lsl $ connection; 0
+
+api_key (yourapikey)
 ```
 
 ## Important state ID's
@@ -214,6 +229,8 @@ sld [125849, 59422, 57829, 10394],
  p.mons = {LOG.chat}, {LOG.text} - ruleset.B
  p.mons = {LOG.users}, {LOG.version} - ruleset.B
  p.mons = {LOG.logsend}, {LOG.vv} - ruleset.V
+
+api_key (yourapikey)
 ```
 
 ## NEEDS TO BE LOADED
@@ -284,6 +301,7 @@ local pub = {} pub.mons = (239435),
 re.locate = (sys30)
 $b {bin.localID940342}, {bin.localID390400}
 
+api_key (yourapikey)
 ```
 
 
@@ -337,6 +355,8 @@ loop.state (mainstates), $ all.states - ruleset.V
 - lib - /libraryV6/old/
 - lib - /libraryV7/current/
 - load.latest (library), ruleset.V
+
+api_key (yourapikey)
 ```
 No version limit.
 
@@ -350,6 +370,8 @@ No version limit.
 - chat.reply $stateFalse = e.msg (cRP 23509)
 - chat.reply $stateError = e.msg (cRP 90250)
 - chat.reply $stateBlackList = e.msg (cRP 935000)
+
+api_key (yourapikey)
 ```
 
 ## call.id / call states
@@ -371,6 +393,8 @@ No version limit.
   - spotify.search (InputReceived) = e.src (Input)
     - spotify.search (output) = e.msg (link)
     - spotify.search (SongNotFound) = e.msg (msg)
+
+api_key (yourapikey)
 ```
 Will search and send the song link as output in chat.
 
@@ -389,6 +413,8 @@ gen.pgen folder(passgen), r(pgen.mbp)
 - `<Symbols>`
 - `<ExcludeSimilarCharacters>`
 - `<ExcludeAmbiguousSymbols>`
+
+api_key (yourapikey)
 ```
 
 ## location service
@@ -414,6 +440,8 @@ location_service = {
     'folder(location)': 'location',
     'readfolder(locationservice.mbp)': '',
     'pub.lc': '[done]'
+
+api_key (yourapikey)
 ```
 
 ## Easy baritone for Minecraft
@@ -425,5 +453,7 @@ baritone.mons {github}, - ruleset.V
 baritone.mons folder(baritone), (baritone.mbp), - ruleset.V
 baritone.mons (update.loop),
 baritone.mons {allowInventory.cb}, - ruleset.V
+
+api_key (yourapikey)
 ```
 - baritone repo - https://github.com/cabaletta/baritone
