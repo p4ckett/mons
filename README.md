@@ -13,7 +13,7 @@
 
 | Parameter | Type     | Description                |
 | :-------- | :------- | :------------------------- |
-| `api_key` | `string` | **Required**. Your API key |
+| `api_key` | (yourapikey) | **Required**. Your API key |
 
 
 #### add(num1, num2)
