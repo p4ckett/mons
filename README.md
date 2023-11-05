@@ -84,8 +84,8 @@ chat.reply $stateError = e.msg (cRP 90250),
 chat.reply (state), $ main(85492809384098102973989080392580982295839812),
 
 this state will reply to messages sent by MEMBERS
-example
 
+# example
 anyone: Hello
 bot: Hello
 
