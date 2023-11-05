@@ -140,6 +140,8 @@ i, mons.scan (error), e.msg (sE 45941), & e, mons.scan (noscan), e.msg (sN 50133
 $ way.gate load /waygate.cf [S],
 $ way.gate check /waygate.cf [S],
 ```
+<br>
+<br>
 
 We can simply make outputs go as response on apps
 Only apps - Guilded/Telegram/Discord
@@ -161,6 +163,9 @@ For example
 
 <br>
 ### NOTE: To work on telegram you need Telegram Bot API
+<br>
+
+<br>
 <br>
 
 ## To get your BOT in VC | telegram/guilded/discord
@@ -191,22 +196,31 @@ user_tele = uste.mbp
 
 api_key (yourapikey)
 ```
-
+<br>
+<br>
 
 ## Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
+<br>
+<br>
+
 ## State Loading and Looping Example
 ```coffeescript
 state ID {load},
 state ID {loop},
 ```
+<br>
+<br>
+
 ## To detect any errors and send the reason to admin panel
 ```coffeescript
 i, error(any), e.msg(reason),
 ```
+<br>
+<br>
 
 ## internal.r (IMPORTANT)
 ```coffeescript
@@ -216,6 +230,8 @@ i, error(any), e.msg(reason),
 server.line [potocle], ]][in], 50923810 + 00000 - ruleset.V
 proto.b{[timeline]},
 ```
+<br>
+<br>
 
 ## Locals
 ```coffeescript
@@ -234,6 +250,8 @@ api_key (yourapikey)
 system.ping [S],
 system.network [S],
 ```
+<br>
+<br>
 
 ## Data Holders (EXAMPLE)
 ```coffeescript
@@ -242,11 +260,15 @@ data.holder {bflk},
 data.holder {prsn},
 data.holder {bfma},
 ```
+<br>
+<br>
 
 ## Load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
+<br>
+<br>
 
 ## Commands.build (IMPORTANT)
 ```coffeescript
@@ -254,6 +276,8 @@ data.holder {bfma},
  commands.build <3157102987340198540917230098091809581237>
  commands.build <1239418739548619283712345986781239871234>
 ```
+<br>
+<br>
 
 ## Important Loops
 ```coffeescript
@@ -275,6 +299,8 @@ boj.v - rbrmmxl.lsl $ connection; 0
 
 api_key (yourapikey)
 ```
+<br>
+<br>
 
 ## Important state ID's
 ```coffeescript
@@ -285,6 +311,8 @@ api_key (yourapikey)
  state $289395801802398025709 {flp},
  state.id{if.local}, = flp_load (base), - ruleset.V
 ```
+<br>
+<br>
 
 ## Important datalocal.mbp
 ```coffeescript
@@ -305,6 +333,8 @@ api_key (yourapikey)
   1204935012,
   5991283549,
 ```
+<br>
+<br>
 
 ## sld ID'S
 ```coffeescript
@@ -312,6 +342,9 @@ sld [349209, 34592, 32000, 92500],
 sld [938412, 18359, 75481, 34858],
 sld [125849, 59422, 57829, 10394],
 ```
+<br>
+<br>
+
 ## LOGS/LIMITERS/RULES/VERSIONS
 ```coffeescript
  l.mons = {READ.limiter.p}, {READ.rules.ini} - ruleset.V
@@ -328,6 +361,9 @@ sld [125849, 59422, 57829, 10394],
 
 api_key (yourapikey)
 ```
+
+<br>
+<br>
 
 ## NEEDS TO BE LOADED
 ```coffeescript
@@ -399,7 +435,8 @@ $b {bin.localID940342}, {bin.localID390400}
 
 api_key (yourapikey)
 ```
-
+<br>
+<br>
 
 ## Long example
 ```coffeescript
@@ -409,6 +446,8 @@ bct.wfs [RD], bct.ry f = r.apanel - ruleset.V
 bct.rly [RY], bct.ry f = r.apanel - ruleset.V
 bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 ```
+<br>
+<br>
 
 `r panel (role_panel) roles [admin/owner/mod],`
 
@@ -421,6 +460,8 @@ p.ram {[main]},
 p.ssd {[main]},
 p.nwk {[main]},
 ```
+<br>
+<br>
 
 ## States
 - load/loop
@@ -428,12 +469,16 @@ p.nwk {[main]},
 state 34901104939057019278380180948052307820934851340891350978180923413057941039478 {load},
 state 39028540491702348259691836794871982377037509172834791657987123097107093785989 {loop},
 ```
+<br>
+<br>
 
 ## loop.state and rulesets
 ```coffeescript
 loop.state (mainstates), $ state.states - ruleset.V
 loop.state (mainstates), $ all.states - ruleset.V
 ```
+<br>
+<br>
 
 - `ruleset.V` means ruleset.VALID
 - `ruleset.B` means ruleset.BLOCK
@@ -454,8 +499,10 @@ api_key (yourapikey)
 ```
 No version limit.
 
-## chat reply states
+<br>
+<br>
 
+## chat reply states
 ```coffeescript
 - chat.reply (/)
 - chat.reply (state), $ main (2340578023799909571)
@@ -467,9 +514,10 @@ No version limit.
 
 api_key (yourapikey)
 ```
+<br>
+<br>
 
 ## call.id / call states
-
 ```coffeescript
 - states - ruleset.V
 - call.id $ 59 [S]
@@ -478,9 +526,10 @@ api_key (yourapikey)
 - call.id $ 12 [S]
 - call.id $ 91 [S]
 ```
+<br>
+<br>
 
 ## Spotify search
-
 ```coffeescript
 - spotify.search [S]
 - spotify.search (waitforInput) - ruleset.V
@@ -497,8 +546,10 @@ Will search and send the song link as output in chat.
 - `t` means true
 - `f` means false
 
-## pass generator
+<br>
+<br>
 
+## pass generator
 gen.pgen folder(passgen), r(pgen.mbp)
 ```coffeescript
 - `<Uppercase>`
@@ -510,9 +561,10 @@ gen.pgen folder(passgen), r(pgen.mbp)
 
 api_key (yourapikey)
 ```
+<br>
+<br>
 
 ## location service
-
 Can use Google maps and SnapMap
 ```coffeescript
 location_service = {
@@ -537,6 +589,8 @@ location_service = {
 
 api_key (yourapikey)
 ```
+<br>
+<br>
 
 ## Easy baritone for Minecraft
 - create baritone.mbp
