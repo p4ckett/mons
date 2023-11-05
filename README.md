@@ -5,15 +5,91 @@
 - compact
 
 Rulesets example
-```
+```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
 State Loading and Looping Example
-```
+```coffeescript
 state ID {load},
 state ID {loop},
 ```
+
+If you want to detect any errors and send the reason to admin panel
+```coffeescript
+i, error(any), e.msg(reason),
+```
+
+# NEEDS TO BE LOADED
+```coffeescrip
+<rule.ids>, <rule.rules>, <rule.sync>
+state [03I30] = warn.msg (locked),
+state.false = warn.msg (sys m00 req3_$xbp local13),
+
+rID [SYNC] (3340)
+ruleID (7,200) rules.ini
+
+304.inter{[½$]} & 305.inter{[£½]}
+
+load.first <peb.eldo>, <peb.monsv>, <peb.mons> [S],
+load.second <mons.lib>, <mbp.mons>, <vc.mons>, <fa.mons>, <bno.mons> [S],
+load.third <recommendation.service>, <location.service>, <local>, [S],
+
+sscl.all [30405, 30493, 95340, 34932, 35404],
+sscl.all [85491, 13493, 34915, 58129, 47123],
+
+sscl.all [remove.invalid],
+
+     feb 4.3.2.15.6.3.5.8.6.2.1.6.8.9.5.1.4.7
+     feb 4.7.4.94.3.5.7.8.1.3.7.7.6.4.4.1.2.4
+     feb 4.1.3.23.5.7.8.3.1.2.6.8.5.3.3.7.9.1
+     feb 4.6.7.54.3.1.5.6.7.1.5.3.5.5.3.1.2.5
+     feb 4.1.6.83.4.1.5.7.8.8.6.1.3.6.8.9.4.1
+
+paste.local {inb0},
+ server.none - ruleset.B
+ paste.local {inb1},
+paste.local {inb0},
+ server.none - ruleset.B
+ paste.local {inb1},
+paste.local {inb0},
+ server.none - ruleset.B
+ paste.local {inb1},
+paste.local {inb0},
+ server.none - ruleset.B
+ paste.local {inb1},
+paste.local {inb0},
+ server.none - ruleset.B
+ paste.local {inb1},
+
+     feb.lock = all [S],
+
+     seb.lock 94002100340589340359234 & seb.lock 98235989384190394859999
+
+<limit.ids> sl$ective -_$userarea #$ 54000 
+v.b (int), b dual $ IDS {3450},
+ sl$ective -_$userarea #$ 54000 
+ v.b (int), b dual $ IDS {3450},
+lID [SYNC] (9540) sl$ective -_$userarea #$ 54000 
+v.b (int), b dual $ IDS {3450},
+limiterID [SYNC] (1,500) limiter.p sl$ective -_$userarea #$ 54000 
+v.b (int), b dual $ IDS {3450},
+ sl$ective -_$userarea #$ 54000 
+ v.b (int), b dual $ IDS {3450},
+{sync.rules}, {sync.limiter}, sl$ective -_$userarea #$ 54000 
+v.b (int), b dual $ IDS {3450},
+ sl$ective -_$userarea #$ 54000 
+ v.b (int), b dual $ IDS {3450},
+l [Houston, TX], sl$ective -_$userarea #$ 54000 
+v.b (int), b dual $ IDS {3450},
+local pub = {} pub.mons = (239435),
+<rq.admin>, <rq.hwid>, <rq.location> [S],
+
+re.locate = (sys30)
+$b {bin.localID940342}, {bin.localID390400}
+
+```
+
 
 ## Long example
 ```coffeescript
@@ -28,7 +104,7 @@ bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 
 # List: ram/memory/cpu/ssd/network
 
-```
+```coffeescript
 p.ram {[main]},
 p.mem {[main]},
 p.cpu {[main]},
@@ -39,14 +115,14 @@ p.nwk {[main]},
 
 # States
 - load/loop
-```
+```coffeescript
 state 34901104939057019278380180948052307820934851340891350978180923413057941039478 {load},
 state 39028540491702348259691836794871982377037509172834791657987123097107093785989 {loop},
 ```
 
 ## loop.state and rulesets
 
-```
+```coffeescript
 loop.state (mainstates), $ state.states - ruleset.V
 loop.state (mainstates), $ all.states - ruleset.V
 ```
@@ -56,7 +132,7 @@ loop.state (mainstates), $ all.states - ruleset.V
 
 ## library
 
-```
+```coffeescript
 - lib - /libraryV1/old/
 - lib - /libraryV2/old/
 - lib - /libraryV3/old/
@@ -70,7 +146,7 @@ No version limit.
 
 ## chat reply states
 
-```
+```coffeescript
 - chat.reply (/)
 - chat.reply (state), $ main (2340578023799909571)
 - chat.reply (state), $ main (2357897150983247839)
@@ -82,7 +158,7 @@ No version limit.
 
 ## call.id / call states
 
-```
+```coffeescript
 - states - ruleset.V
 - call.id $ 59 [S]
 - call.id $ 50 [S]
@@ -93,7 +169,7 @@ No version limit.
 
 ## Spotify search
 
-```
+```coffeescript
 - spotify.search [S]
 - spotify.search (waitforInput) - ruleset.V
   - spotify.search (InputReceived) = e.src (Input)
@@ -110,7 +186,7 @@ Will search and send the song link as output in chat.
 ## pass generator
 
 gen.pgen folder(passgen), r(pgen.mbp)
-```
+```coffeescript
 - `<Uppercase>`
 - `<lowercase>`
 - `<Numbers >`
@@ -122,7 +198,7 @@ gen.pgen folder(passgen), r(pgen.mbp)
 ## location service
 
 Can use Google maps and SnapMap
-```
+```coffeescript
 location_service = {
     'serviceID': 9349,
     'run': True,
