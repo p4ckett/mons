@@ -17,7 +17,7 @@ We can simply make outputs go as response on apps
 Only apps - Guilded/Telegram/Discord
 You need to understand API's
 
-- create ACCOUNT for the BOT or the AI you're making
+- create ACCOUNT for the BOT you're making
 
 ```coffeescript
 v.b {windows}, (currentVer),
