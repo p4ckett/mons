@@ -21,12 +21,14 @@ main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
 
 api_key (yourapikey)
 ```
+<br>
 
 - to run your code
 `mons yourcode.mons`
+<br>
 
 If you wanna make KEY system on your discord server or guilded
-```
+```coffeescript
 s.f key_sys {require_key},
 i, key(sent), = check
  keyDB(yourkeyDATABASE),
