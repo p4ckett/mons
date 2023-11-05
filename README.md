@@ -135,7 +135,7 @@ v.b (int), b dual $ IDS {3450},
 v.b (int), b dual $ IDS {3450},
  sl$ective -_$userarea #$ 54000 
  v.b (int), b dual $ IDS {3450},
-l [Houston, TX], sl$ective -_$userarea #$ 54000 
+l [LocationHere], sl$ective -_$userarea #$ 54000 
 v.b (int), b dual $ IDS {3450},
 local pub = {} pub.mons = (239435),
 <rq.admin>, <rq.hwid>, <rq.location> [S],
