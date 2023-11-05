@@ -73,13 +73,21 @@ data.holder {bfma},
 
 # Important Loops
 ```coffeescript
+
+# main.pr execl Loops
 loop main.pr ^execl _$BMFNASMFK > 58912834
 loop main.pr ^execl _$JFZXCBNMA > 23509812
 loop main.pr ^execl _$VNOEWPLAS > 85293124
 
+# main.pr Loops
 main.pr (7), <IDP> > main.pr (1), <QPS> > main.pr (9), <VEQ>
 main.pr (2), <QBG> > main.pr (8), <LPT> > main.pr (6), <BGH>
 main.pr (4), <ITR> > main.pr (3), <VNC> > main.pr (0), <BXZ>
+
+# forece.local Loops
+b$skcm.loop_ in server $ force.local; fire ^ intbBBS
+boj.v - rbrmmxl.lsl $ connection; 3
+boj.v - rbrmmxl.lsl $ connection; 0
 ```
 
 # Important state ID's
