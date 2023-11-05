@@ -1,5 +1,5 @@
 ## 💊 mons coding language
-Fast - Smooth - Clean
+# Fast - Smooth - Clean
 
 <br>
 
