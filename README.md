@@ -10,10 +10,9 @@
 - not hard to code
 - easy to run
 - compact
+  
 
-- <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"> TEST
-- 
-Rulesets example
+- <img src="https://raw.githubusercontent.com/HotCakeX/.github/main/Pictures/Gifs/magenta-verification.gif" width="25" alt="Rotating pink checkmark denoting registry or cmdlet"> Rulesets example
 ```coffeescript
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
