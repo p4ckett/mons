@@ -1,4 +1,4 @@
-## .mons coding language / fast,smooth,clean
+## 💊 mons coding language / fast,smooth,clean
 
 <br>
 
@@ -6,10 +6,10 @@
 
 <br>
 
-💊 - not difficult to understand
-💊 - not hard to code
-💊 - easy to run
-💊 - compact
+- not difficult to understand
+- not hard to code
+- easy to run
+- compact
 
 Rulesets example
 ```coffeescript
