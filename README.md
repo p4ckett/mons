@@ -17,18 +17,18 @@
 [ruleset.V], which means ruleset.VALID
 [ruleset.B], which means ruleset.BLOCK
 ```
-State Loading and Looping Example
+<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> State Loading and Looping Example
 ```coffeescript
 state ID {load},
 state ID {loop},
 ```
 
-If you want to detect any errors and send the reason to admin panel
+<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> If you want to detect any errors and send the reason to admin panel
 ```coffeescript
 i, error(any), e.msg(reason),
 ```
 
-load, exec, userlevel
+<img src="https://raw.githubusercontent.com/HotCakeX/Harden-Windows-Security/main/images/Gifs/RedStar.gif" width="30" alt="Red Star denoting Security Recommendation"> load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
 ```
