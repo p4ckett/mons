@@ -8,19 +8,21 @@ bct.lup [LP], bct.ry f = r.apanel - ruleset.V
 
 # r panel (role_panel) roles [admin/owner/mod],
 
-## list ram/mem/cpu/ssd/nwk 
+list ram/mem/cpu/ssd/nwk 
 
-$ ram, memory, cpu, ssd, network -
+ram, memory, cpu, ssd, network -
 
 # states - load/loop
 
-$ state 34901104939057019278380180948052307820934851340891350978180923413057941039478 {load},
-$ state 39028540491702348259691836794871982377037509172834791657987123097107093785989 {loop},
+state 34901105097857941039478 {load},
+state 39028540496798093785989 {loop},
 
 # loop.state and rulesets
 
-loop.state (mainstates), $ state.states - ruleset.V
-loop.state (mainstates), $ all.states - ruleset.V
+loop.state (mainstates), 
+$ state.states - ruleset.V
+loop.state (mainstates), 
+$ all.states - ruleset.V
 
 - ruleset.V means ruleset.VALID
 - ruleset.B means ruleset.BLOCK
@@ -41,9 +43,9 @@ load.latest (library), ruleset.V
 # chat reply states
 
 chat.reply (/),
-chat.reply (state), $ main (23405780237901872039138045912034810973109571),
-chat.reply (state), $ main (23578971039180951730591809380917350983247839),
-chat.reply (state), $ main (85492809384098102973989080392580982295839812),
+chat.reply (state), $ main (2340578023799909571),
+chat.reply (state), $ main (2357897150983247839),
+chat.reply (state), $ main (8549280392580939812),
 
 chat.reply $stateFalse = e.msg (cRP 23509),
 chat.reply $stateError = e.msg (cRP 90250),
