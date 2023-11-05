@@ -27,6 +27,14 @@ If you want to detect any errors and send the reason to admin panel
 i, error(any), e.msg(reason),
 ```
 
+Data Holders (EXAMPLE)
+```
+data.holder {dbfr},
+data.holder {bflk},
+data.holder {prsn},
+data.holder {bfma},
+```
+
 Load, exec, userlevel
 ```coffeescript
 <p3bload>, <exec>, <userexeclevel>
