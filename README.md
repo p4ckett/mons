@@ -20,6 +20,27 @@ If you want to detect any errors and send the reason to admin panel
 i, error(any), e.msg(reason),
 ```
 
+sld ID'S
+```
+sld [349209, 34592, 32000, 92500],
+sld [938412, 18359, 75481, 34858],
+sld [125849, 59422, 57829, 10394],
+```
+LOGS/LIMITERS/RULES/VERSIONS
+```
+ l.mons = {READ.limiter.p}, {READ.rules.ini} - ruleset.V
+ l.mons = {LOCAL.tornetwork}, {PRIVATE.tornetwork} - ruleset.V
+ l.mons = {BREAK.behvnm300}, {BREAK.idlfle} - ruleset.V
+
+ m.mons = {VERSION.private}, {VERSION.updater} ruleset.V
+ m.mons = {VERSION.betaCLOSED}, {VERSION.alphaCLOSED} - ruleset.B
+ m.mons = {VERSION.NEWmons} {VERSION.NEWshort} - ruleset.V
+
+ p.mons = {LOG.chat}, {LOG.text} - ruleset.B
+ p.mons = {LOG.users}, {LOG.version} - ruleset.B
+ p.mons = {LOG.logsend}, {LOG.vv} - ruleset.V
+```
+
 # NEEDS TO BE LOADED
 
 ```coffeescript
