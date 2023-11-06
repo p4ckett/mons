@@ -42,6 +42,39 @@ e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
 <br>
 <br>
 
+### to add Image generator
+```coffeescript
+mons.imggen {currentV3}, - ruleset.V
+mons.imggen {nofail},
+```
+<br>
+
+### to be fully sure if custom commands are running
+```coffeescript
+commands.loader(local),
+ ch, mons.running $ check (gg.commands),
+ ch, mons.running $ check (folder.all),
+
+# ch means check, make sure to add it in first line
+# example ch, mons.running $ check (API),
+```
+<br>
+
+### new valid states
+```coffeescript
+valid.state [reverse],
+valid.state [push],
+valid.state [pause],
+```
+<br>
+
+### to end support
+```coffeescript
+mons.vc{disable}, - reason(supportENDED),
+mons.vc{serverdisable}, - reason(supportENDED),
+```
+<br>
+
 ### example
 ```coffeescript
 main.pr (7), <IDP> > main.pr (1), <QPS> > main.pr (9), <VEQ>
