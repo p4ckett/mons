@@ -31,6 +31,19 @@ e.msg(error) - will send ERRORS to your LOGS
 e.msg error(any) - will send any ERROR to your LOGS
 e.msg(apikeyEXP) - this will tell if your mons API key expired (IMPORTANT)
 ```
+<br>
+
+### New payload support 1x4
+```coffeescript
+local.payload(zero(1x4),
+
+ support.local(payloads), [{ARCH}],
+
+  onion.layer(payload), {
+    1x4 - f
+     checkfor.payload(ARCH), - ruleset.V
+  },
+```
 
 <br>
 
@@ -402,7 +415,8 @@ lib - /libraryV3/old/
 lib - /libraryV4/old/
 lib - /libraryV5/old/
 lib - /libraryV6/old/
-lib - /libraryV7/current/
+lib - /libraryV7/old/
+lib - /libraryV8/current/
 - load.latest (library), ruleset.V
 
 api_key (yourapikey)
